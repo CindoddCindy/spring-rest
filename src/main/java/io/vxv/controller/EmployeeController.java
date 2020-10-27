@@ -1,7 +1,7 @@
-package academy.ennate.controller;
+package io.vxv.controller;
 
-import academy.ennate.entity.Employee;
-import academy.ennate.service.EmployeeService;
+import io.vxv.entity.Employee;
+import io.vxv.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,20 +23,23 @@ public class EmployeeController {
     public List<Employee> findAll(){
         return service.findAll();
     }
+    
     @RequestMapping(method = RequestMethod.GET, value = "{id}")
     public Employee findOne(@PathVariable("id") String empId){
         return service.findOne(empId);
     }
+    
     @RequestMapping(method = RequestMethod.POST)
     public Employee create(@RequestBody Employee employee){
         return employee;
     }
+    
     @RequestMapping(method = RequestMethod.PUT, value = "{id}")
     public Employee update(@PathVariable("id") String empId, @RequestBody Employee employee){
         return employee;
     }
+    
     @RequestMapping(method = RequestMethod.DELETE, value = "{id}")
     public void delete(@PathVariable("id") String empId){
-
     }
 }

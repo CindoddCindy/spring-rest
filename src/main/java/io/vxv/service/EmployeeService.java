@@ -1,8 +1,6 @@
-package academy.ennate.service;
+package io.vxv.service;
 
-
-import academy.ennate.entity.Employee;
-
+import io.vxv.entity.Employee;
 import java.util.List;
 
 public interface EmployeeService {
@@ -15,7 +13,4 @@ public interface EmployeeService {
     Employee update(String id, Employee emp);
 
     void delete(String id);
-
-
-
 }

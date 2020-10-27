@@ -1,5 +1,4 @@
-package academy.ennate;
-
+package io.vxv;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

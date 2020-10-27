@@ -1,11 +1,10 @@
-package academy.ennate.service;
+package io.vxv.service;
 
-import academy.ennate.entity.Employee;
-import academy.ennate.exception.EmployeeNotFoundException;
-import academy.ennate.repository.EmployeeRepository;
+import io.vxv.entity.Employee;
+import io.vxv.exception.EmployeeNotFoundException;
+import io.vxv.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +15,6 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public List<Employee> findAll() {
-
         return repository.findAll();
     }
 

@@ -1,8 +1,6 @@
-package academy.ennate.repository;
+package io.vxv.repository;
 
-
-import academy.ennate.entity.Employee;
-
+import io.vxv.entity.Employee;
 import java.util.ArrayList;
 import java.util.List;
 
